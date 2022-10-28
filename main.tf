@@ -4,7 +4,7 @@ terraform {
     hostname     = "app.terraform.io" # default
 
     workspaces {
-      name = "terraform-edu-chapter7-tfc"
+      name = "terraform-aws-tfc-workflow"
     }
   }
   required_providers {
