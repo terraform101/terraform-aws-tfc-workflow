@@ -19,8 +19,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "terraform cloud workflow"
-      Owner   = "jerry & tom"
+      Project = "terraform cloud workflow123"
+      Owner   = "jerry & tom111"
     }
   }
 }
