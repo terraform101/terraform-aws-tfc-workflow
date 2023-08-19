@@ -1,12 +1,12 @@
 terraform {
-  cloud {
-    organization = "<MY-ORG>"
-    hostname     = "app.terraform.io" # default
+  #cloud {
+    #organization = "BuggerNara-org"
+    #hostname     = "app.terraform.io" # default
 
-    workspaces {
-      name = "terraform-aws-tfc-workflow"
-    }
-  }
+  #  workspaces {
+  #    name = "terraform-aws-tfc-workflow"
+  #  }
+  #}
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -19,7 +19,7 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
+      Project = "terraform cloud workflow"
       Owner   = "jerry & tom"
     }
   }
