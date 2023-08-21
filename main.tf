@@ -1,8 +1,7 @@
 terraform {
 #  cloud {
-3    organization = "topasvga-org"
+#    organization = "topasvga-org"
 #    hostname     = "app.terraform.io" # default
-
 #    workspaces {
 #      name = "terraform-aws-tfc-workflow"
 #    }
