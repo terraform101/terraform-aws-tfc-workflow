@@ -1,4 +1,15 @@
 terraform {
+#<<<<<<< tfc-workflow
+=======
+#  cloud {
+#    organization = "topasvga-org"
+#    hostname     = "app.terraform.io" # default
+#
+#    workspaces {
+#      name = "terraform-aws-tfc-workflow"
+#    }
+#  }
+# >>>>>>> main
   required_providers {
     aws = {
       source  = "hashicorp/aws"
