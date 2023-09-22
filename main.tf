@@ -1,25 +1,25 @@
-terraform {
-  cloud {
-    organization = "<MY-ORG>"
-    hostname     = "app.terraform.io" # default
-
-    workspaces {
-      name = "terraform-aws-tfc-workflow"
-    }
-  }
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
-}
+#terraform {
+#  cloud {
+#    organization = "dongpal-org"  #app.terraform.io org ID
+#    hostname     = "app.terraform.io" # default
+#
+#    workspaces {
+#      name = "terraform-aws-tfc-workflow"
+#    }
+# }
+#  required_providers {
+#    aws = {
+#      source  = "hashicorp/aws"
+#      version = "~> 4.0"
+#    }
+#  }
+#}
 
 provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
+      Project = "terraform cloud workflow"
       Owner   = "jerry & tom"
     }
   }
