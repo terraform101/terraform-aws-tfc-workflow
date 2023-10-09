@@ -1,12 +1,12 @@
 terraform {
-  cloud {
-    organization = "<MY-ORG>"
-    hostname     = "app.terraform.io" # default
+  # cloud {
+  #   organization = "somaz-org"
+  #   hostname     = "app.terraform.io" # default
 
-    workspaces {
-      name = "terraform-aws-tfc-workflow"
-    }
-  }
+  #   workspaces {
+  #     name = "terraform-aws-tfc-workflow"
+  #   }
+  # }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
