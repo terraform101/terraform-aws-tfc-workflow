@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "dohun-org"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -21,6 +21,7 @@ provider "aws" {
     tags = {
       name        = "${var.prefix}-vpc-${var.region}"
       environment = var.environment
+      project ="HCP Terraform workflow"
     }
   }
 }
