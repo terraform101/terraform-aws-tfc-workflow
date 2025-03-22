@@ -17,6 +17,16 @@ variable "subnet_prefix" {
   default     = "10.0.10.0/24"
 }
 
+variable "ec2_count" {
+  default = 1
+  description = "ec2 instance count"
+
+  validation {
+    condition = var.ec2_count > 0
+    error_message = "The ec2_count value caanot set Zero"
+  }
+}
+
 variable "instance_type" {
   description = "Specifies the AWS instance type."
   default     = "t3.micro"
