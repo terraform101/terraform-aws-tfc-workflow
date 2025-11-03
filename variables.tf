@@ -46,3 +46,13 @@ variable "environment" {
     error_message = "The environment value must be dev, qa, or prod."
   }
 }
+
+variable "ec2_count" {
+  default     = 1
+  description = "ec2 instance count"
+
+  validation {
+    condition     = var.ec2_count > 0
+    error_message = "The ec2_count value cannot set Zero"
+  }
+}
